@@ -1,9 +1,28 @@
 @import url('https://fonts.googleapis.com/css?family=Tajawal');
 
 body {
-  margin: 0;
   font-family: 'Tajawal', sans-serif;
 }
+
+/* -------------------------------------------------------- */
+/* HEADER */
+/* -------------------------------------------------------- */
+
+header h1 {
+  text-align: center;
+  margin-top: 20px;
+}
+
+header h1 a, header h1 a:hover {
+  color: grey;
+  text-decoration: none;
+  font-weight: 400;
+  font-size: 2rem;
+}
+
+/* -------------------------------------------------------- */
+/* NAVBAR */
+/* -------------------------------------------------------- */
 
 nav {
   text-align: right;
@@ -14,17 +33,15 @@ nav li {
   margin-left: 100px;
   padding-top: 10px;
   position: relative;
-}
-
-nav li {
   list-style: none;
   display: inline-block;
 }
 
-nav a {
+nav a, nav a:hover {
   text-decoration: none;
   color: grey;
   text-transform: lowercase;
+  font-size: 1.5 rem;
 }
 
 nav a:hover {
@@ -46,24 +63,30 @@ nav a:hover::before {
   width: 100%;
 }
 
+/* -------------------------------------------------------- */
+/* MAIN */
+/* -------------------------------------------------------- */
+
+.main-box {
+  /* background-color: aqua; */
+  width: 90%;
+  margin: 0 auto;
+}
+
 main img {
   height: 300px;
-  width: 300px;
+  width: auto;
+  /* border: 3px solid rgb(255, 0, 0); */
+  margin : 20px;
 }
 
-h1 {
-  text-align: center;
-}
-
-h1 a {
-  color: grey;
-  text-decoration: none;
-  font-weight: 400;
-}
+/* -------------------------------------------------------- */
+/* FOOTER */
+/* -------------------------------------------------------- */
 
 footer {
   text-align: center;
   font-weight: 200;
   color: grey;
-  font-size: 1rem;
+  margin-top: 20px;
 }
